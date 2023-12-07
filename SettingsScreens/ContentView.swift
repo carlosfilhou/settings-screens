@@ -18,14 +18,14 @@ struct ContentView: View {
                 }
             }
             Section {
-                    HStack { // agrupador de elemento visual
-                        Image(systemName: "folder.fill.badge.plus")
-                        Text("Notificações")
-                    }
-                    HStack { // agrupador de elemento visual
-                        Image(systemName: "speaker.3.fill")
-                        Text("Som e Tato")
-                    }
+                HStack { // agrupador de elemento visual
+                    Image(systemName: "folder.fill.badge.plus")
+                    Text("Notificações")
+                }
+                HStack { // agrupador de elemento visual
+                    Image(systemName:"speaker.3.fill")
+                    Text("Som e Tato")
+                }
             }
         }
     }
