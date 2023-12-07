@@ -1,12 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var automaticButton: Bool = false
+    
     var body: some View {
         Form { // agrupador de elemento visual
             Section {
                 HStack { // agrupador de elemento visual
                     Image(systemName: "airplane")
                     Text("Modo Avião")
+                    Spacer()
+                    Toggle("",isOn:$automaticButton)
                 }
                 HStack { // agrupador de elemento visual
                     Image(systemName: "wifi")
