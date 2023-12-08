@@ -9,46 +9,55 @@ struct ContentView: View {
     let footerText = "When in Low Power Mode, auto-lock us restricted to 30 seconds."
     
     var body: some View {
-        Form { // agrupador de elemento visual
-            Section {
-                HStack { // agrupador de elemento visual
-                    Image(systemName: "airplane")
-                    Text("Airplane Mode")
-                    Spacer()
-                    Toggle("",isOn:$toggleButton) // fazendo o binding (source of truth)
+        NavigationView {
+            Form { // agrupador de elemento visual
+                Section {
+                    HStack { // agrupador de elemento visual
+                        Image(systemName: "airplane")
+                        Text("Airplane Mode")
+                        Spacer()
+                        Toggle("",isOn:$toggleButton) // fazendo o binding (source of truth)
+                    }
+                    HStack { // agrupador de elemento visual
+                        Image(systemName: "wifi")
+                        Text("Wi-Fi")
+                        Spacer()
+                        Text("home")
+                            .font(.callout) // modificadores
+                            .foregroundColor(.gray) // modificadores
+                    }
                 }
-                HStack { // agrupador de elemento visual
-                    Image(systemName: "wifi")
-                    Text("Wi-Fi")
-                    Spacer()
-                    Text("home")
-                        .font(.callout) // modificadores
-                        .foregroundColor(.gray) // modificadores
+                Section {
+                    Group {
+                        HStack { // agrupador de elemento visual
+                            Image(systemName: "folder.fill.badge.plus")
+                            Text("Notifications")
+                        }
+                    }
+                    Group {
+                        HStack { // agrupador de elemento visual
+                            Image(systemName:"speaker.3.fill")
+                            Text("Sounds & Haptics")
+                        }
+                    }
+                    NavigationLink(destination: DisplayView()) {
+                        HStack {
+                            Image(systemName: "sun.max.fill")
+                            Text("Display & Brightness")
+                            Spacer()
+                        }
+                    }
                 }
-            }
-            Section {
-                HStack { // agrupador de elemento visual
-                    Image(systemName: "folder.fill.badge.plus")
-                    Text("Notifications")
-                }
-                HStack { // agrupador de elemento visual
-                    Image(systemName:"speaker.3.fill")
-                    Text("Sounds & Haptics")
-                }
-                HStack {
-                    Image(systemName: "sun.max.fill")
-                    Text("Display & Brightess")
-                }
-            }
-            Section(header: Text(brightnessTittle), footer: Text(footerText)) { // título no topo
-                HStack {
-                    Image(systemName: "sun.max.fill")
-                        .foregroundColor(.gray)
-                    Slider(value: $sliderButton, in: 0...100)
-                    Image(systemName: "sun.max.fill")
-                        .resizable() // modificador que possibilita mudar o tamanho
-                        .frame(width: 25, height: 25) // modificando o tamanho
-                        .foregroundColor(.gray)
+                Section(header: Text(brightnessTittle), footer: Text(footerText)) { // título no topo
+                    HStack {
+                        Image(systemName: "sun.max.fill")
+                            .foregroundColor(.gray)
+                        Slider(value: $sliderButton, in: 0...100)
+                        Image(systemName: "sun.max.fill")
+                            .resizable() // modificador que possibilita mudar o tamanho
+                            .frame(width: 25, height: 25) // modificando o tamanho
+                            .foregroundColor(.gray)
+                    }
                 }
             }
         }
