@@ -13,7 +13,7 @@ struct ContentView: View {
             Section {
                 HStack { // agrupador de elemento visual
                     Image(systemName: "airplane")
-                    Text("Modo Avião")
+                    Text("Airplane Mode")
                     Spacer()
                     Toggle("",isOn:$toggleButton) // fazendo o binding (source of truth)
                 }
@@ -21,7 +21,7 @@ struct ContentView: View {
                     Image(systemName: "wifi")
                     Text("Wi-Fi")
                     Spacer()
-                    Text("casa")
+                    Text("home")
                         .font(.callout) // modificadores
                         .foregroundColor(.gray) // modificadores
                 }
@@ -29,11 +29,15 @@ struct ContentView: View {
             Section {
                 HStack { // agrupador de elemento visual
                     Image(systemName: "folder.fill.badge.plus")
-                    Text("Notificações")
+                    Text("Notifications")
                 }
                 HStack { // agrupador de elemento visual
                     Image(systemName:"speaker.3.fill")
-                    Text("Som e Tato")
+                    Text("Sounds & Haptics")
+                }
+                HStack {
+                    Image(systemName: "sun.max.fill")
+                    Text("Display & Brightess")
                 }
             }
             Section(header: Text(brightnessTittle), footer: Text(footerText)) { // título no topo
