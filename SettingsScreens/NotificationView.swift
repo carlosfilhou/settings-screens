@@ -2,10 +2,14 @@ import SwiftUI
 
 struct NotificationView: View {
     var body: some View {
-        NavigationStack {
-            List { // usando outra forma além do Form
-                NavigationLink(destination: DisplayView()) {
-                    Text("Message")
+        NavigationView {
+            Form { // usando outra forma além do Form
+                Section(header: Text("Notifications")) {
+                    HStack {
+                        NavigationLink(destination: DisplayView()) {
+                            Text("Message")
+                        }
+                    }
                 }
             }
         }

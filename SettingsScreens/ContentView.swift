@@ -28,9 +28,11 @@ struct ContentView: View {
                     }
                 }
                 Section {
-                    HStack { // agrupador de elemento visual
-                        Image(systemName: "folder.fill.badge.plus")
-                        Text("Notifications")
+                    NavigationLink(destination: NotificationView()) {
+                        HStack { // agrupador de elemento visual
+                            Image(systemName: "folder.fill.badge.plus")
+                            Text("Notifications")
+                        }
                     }
                     HStack { // agrupador de elemento visual
                         Image(systemName:"speaker.3.fill")
