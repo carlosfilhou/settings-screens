@@ -21,6 +21,8 @@ struct DisplayView: View {
                 }
             }
         }
+        .navigationTitle("Display & Brightness")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

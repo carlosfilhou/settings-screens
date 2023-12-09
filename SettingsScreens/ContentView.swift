@@ -28,27 +28,23 @@ struct ContentView: View {
                     }
                 }
                 Section {
-                    Group {
-                        HStack { // agrupador de elemento visual
-                            Image(systemName: "folder.fill.badge.plus")
-                            Text("Notifications")
-                        }
+                    HStack { // agrupador de elemento visual
+                        Image(systemName: "folder.fill.badge.plus")
+                        Text("Notifications")
                     }
-                    Group {
-                        HStack { // agrupador de elemento visual
-                            Image(systemName:"speaker.3.fill")
-                            Text("Sounds & Haptics")
-                        }
+                    HStack { // agrupador de elemento visual
+                        Image(systemName:"speaker.3.fill")
+                        Text("Sounds & Haptics")
                     }
                     NavigationLink(destination: DisplayView()) {
                         HStack {
                             Image(systemName: "sun.max.fill")
                             Text("Display & Brightness")
-                            Spacer()
                         }
                     }
                 }
             }
+            .navigationTitle("Settings")
         }
     }
 }
