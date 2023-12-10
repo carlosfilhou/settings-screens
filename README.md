@@ -1,6 +1,6 @@
 ## Settings Screens
 
-In construction to put into practice Swift and SwiftUI fundamentals / Em construção para colocar em prática fundamentos do Swift e SwiftUI
+A simple project just to put SwiftUI 'view' concepts into practice for learning purposes / Projeto simples apenas para colocar em prática conceitos de "view" no SwiftUI com objetivo de aprendizagem
 
 ## Screenshots
 
