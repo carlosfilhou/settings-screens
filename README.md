@@ -5,7 +5,6 @@ In construction to put into practice Swift and SwiftUI fundamentals / Em constru
 ## Screenshots
 
 <p align="center">
-  <img src="SettingsScreens/.github/images/settingsImage.png" alt="Texto Alternativo" width="300" height="593">
-  
-  <img src="SettingsScreens/.github/images/settingsVideo.mov" alt="Texto Alternativo" width="300">
+  <img src="SettingsScreens/.github/images/settingsImage.png" alt="Texto Alternativo" width="250">
+  <img src="SettingsScreens/.github/images/settingsVideo.gif" alt="Texto Alternativo" width="250">
 </p>
