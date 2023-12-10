@@ -5,6 +5,6 @@ A simple project just to put SwiftUI 'view' concepts into practice for learning 
 ## Screenshots
 
 <p align="center">
-  <img src="SettingsScreens/.github/images/firstScreen.png" alt="Texto Alternativo" width="300">
-  <img src="SettingsScreens/.github/images/seconddScreen.png" alt="Texto Alternativo" width="300">
+  <img src=".github/images/firstScreen.png" align="center" width=300>
+  <img src=".github/images/secondScreen.png" align="center" width=300>
 </p>
