@@ -20,7 +20,7 @@ A simple project just to put SwiftUI 'view' concepts into practice for learning 
 
 ## Tecnologias Utilizadas
 
-SWIFT & SWIFTUI
+Swift & SwiftUI
 
 ## Autores
 
