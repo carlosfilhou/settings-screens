@@ -24,4 +24,4 @@ Swift & SwiftUI
 
 ## Autores
 
-<img src=".github/images/profile.png" align="center" width=300>
+<img src=".github/images/profile.png" align="center" width=260>
